@@ -1,10 +1,16 @@
 import React from 'react';
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
+
+import './style.css';
 
 const PageWrapper = () => {
   return (
-    <div>
-      <p>213</p>
-    </div>
+    <>
+      <Header />
+      <main className='page-wrapper__main'>main</main>
+      <Footer />
+    </>
   );
 };
 
