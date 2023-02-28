@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../../ui/logo/Logo';
 
 import styled from 'styled-components';
+import Wrapper from '../wrapper/Wrapper';
 
 const StyledFooter = styled.footer`
   display: flex;
@@ -14,7 +15,6 @@ const StyledFooter = styled.footer`
 `;
 
 const Copyright = styled.span`
-  margin-right: 90px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -26,8 +26,10 @@ const Copyright = styled.span`
 const Footer = () => {
   return (
     <StyledFooter>
-      <Logo />
-      <Copyright>Создано в 2021</Copyright>
+      <Wrapper>
+        <Logo />
+        <Copyright>Создано в 2021</Copyright>
+      </Wrapper>
     </StyledFooter>
   );
 };
