@@ -1,0 +1,20 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	width: 1280px;
+	min-height: 80px;
+	margin-inline: auto;
+	margin-top: auto;
+	align-items: center;
+
+}
+
+.footer__copyright {
+	margin-right: 90px;
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+color: #333;
+}

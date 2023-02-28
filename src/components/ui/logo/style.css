@@ -1,0 +1,15 @@
+.logo__link {
+	margin-left: 90px;
+	display: flex;
+	gap: 1.5em;
+	align-items: center;
+	text-decoration: none;
+}
+
+.logo__text {
+	color: #333;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.75rem;
+}
