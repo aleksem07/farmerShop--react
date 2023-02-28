@@ -2,9 +2,9 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-const SryledButton = styled.button`
-  margin-right: 90px;
+const StyledButton = styled.button`
   border: none;
+  border-radius: 10px;
   width: 20%;
   min-height: 60px;
   cursor: pointer;
@@ -17,8 +17,12 @@ const SryledButton = styled.button`
   color: #fff;
 `;
 
-const Button = ({ children }) => {
-  return <SryledButton type='button'>{children}</SryledButton>;
+const Button = ({ className, children }) => {
+  return (
+    <StyledButton className={className} type='button'>
+      {children}
+    </StyledButton>
+  );
 };
 
 export default Button;

@@ -4,7 +4,6 @@ import farmer from '../../../assets/farmer.svg';
 import styled from 'styled-components';
 
 const Link = styled.a`
-  margin-left: 90px;
   display: flex;
   gap: 1.5em;
   align-items: center;

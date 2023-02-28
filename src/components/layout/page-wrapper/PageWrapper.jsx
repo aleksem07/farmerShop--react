@@ -3,6 +3,7 @@ import Header from '../header/Header';
 import Footer from '../footer/Footer';
 
 import styled from 'styled-components';
+import Wrapper from '../wrapper/Wrapper';
 
 const StyledMain = styled.main`
   width: 1280px;
@@ -13,7 +14,10 @@ const PageWrapper = () => {
   return (
     <>
       <Header />
-      <StyledMain>main styled</StyledMain>
+
+      <StyledMain>
+        <Wrapper>wrapper</Wrapper>
+      </StyledMain>
       <Footer />
     </>
   );
