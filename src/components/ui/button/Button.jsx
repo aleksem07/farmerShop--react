@@ -12,7 +12,7 @@ const StyledButton = styled.button`
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 150%;
   color: #fff;
 `;
