@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import Header from '/src/components/layout/header/Header';
+import Footer from '/src/components/layout/footer/Footer';
 
 import styled from 'styled-components';
-import Wrapper from '../wrapper/Wrapper';
+import Wrapper from '/src/components/layout/wrapper/Wrapper';
 
 const StyledMain = styled.main`
   max-width: 1280px;

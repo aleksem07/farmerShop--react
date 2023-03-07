@@ -1,5 +1,5 @@
 import React from 'react';
-import farmer from '../../../assets/farmer.svg';
+import farmer from '/src/assets/farmer.svg';
 
 import styled from 'styled-components';
 
