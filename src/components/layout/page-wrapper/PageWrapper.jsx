@@ -3,7 +3,8 @@ import Header from '/src/components/layout/header/Header';
 import Footer from '/src/components/layout/footer/Footer';
 
 import styled from 'styled-components';
-import Wrapper from '/src/components/layout/wrapper/Wrapper';
+
+import MainPage from '../main-page/MainPage';
 
 const StyledMain = styled.main`
   max-width: 1280px;
@@ -15,9 +16,8 @@ const PageWrapper = () => {
   return (
     <>
       <Header />
-
       <StyledMain>
-        <Wrapper>wrapper</Wrapper>
+        <MainPage />
       </StyledMain>
       <Footer />
     </>
