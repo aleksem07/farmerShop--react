@@ -1,9 +1,9 @@
 import React from 'react';
-import Button from '../../ui/button/Button';
-import Logo from '../../ui/logo/Logo';
+import Button from '/src/components/ui/button/Button';
+import Logo from '/src/components/ui/logo/Logo';
 
 import styled from 'styled-components';
-import Wrapper from '../wrapper/Wrapper';
+import Wrapper from '/src/components/layout/wrapper/Wrapper';
 
 const StyledHeader = styled.header`
   display: flex;
