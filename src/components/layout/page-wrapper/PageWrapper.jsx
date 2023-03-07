@@ -6,7 +6,8 @@ import styled from 'styled-components';
 import Wrapper from '../wrapper/Wrapper';
 
 const StyledMain = styled.main`
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 `;
 

@@ -10,13 +10,10 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   min-height: 80px;
   margin: 0 auto;
-`;
-
-const GreenButton = styled(Button)`
-  background-color: Green;
 `;
 
 const Header = () => {
@@ -25,7 +22,6 @@ const Header = () => {
       <Wrapper>
         <Logo />
         <Button>Купить</Button>
-        <GreenButton>Green</GreenButton>
       </Wrapper>
     </StyledHeader>
   );

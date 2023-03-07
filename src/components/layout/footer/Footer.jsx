@@ -7,7 +7,8 @@ import Wrapper from '../wrapper/Wrapper';
 const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   min-height: 80px;
   margin-inline: auto;
   margin-top: auto;
@@ -15,10 +16,11 @@ const StyledFooter = styled.footer`
 `;
 
 const Copyright = styled.span`
+  align-self: center;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 150%;
   color: #333;
 `;
