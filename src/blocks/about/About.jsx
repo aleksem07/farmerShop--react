@@ -1,34 +1,40 @@
 import React from 'react';
 import styled from 'styled-components';
-import Wrapper from '/src/components/layout/wrapper/Wrapper';
+import Title, { TitleSize } from '../../components/ui/title/Title';
 
-import style from './style.css';
+import './style.css';
 const AboutText = styled.p`
   color: #333333;
 `;
 
 const SectionAbout = styled.section`
-  width: 1280px;
+  max-width: 1280px;
   width: 100%;
   min-height: 600px;
-  display: flex;
-  flex-wrap: wrap;
   background-color: #d8ecfe;
+`;
+
+const GridWrapper = styled.div`
+  padding-top: 56px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 6px;
+  margin-inline: 7%;
 `;
 
 const About = () => {
   return (
     <SectionAbout>
-      <Wrapper>
+      <GridWrapper>
         <div className='text__wrapper'>
-          <h1>Магазин фермерских продуктов с доставкой</h1>
+          <Title size={TitleSize.BIG}>Магазин фермерских продуктов с доставкой</Title>
           <AboutText>
             Все продукты изготавливаются под заказ. Фермеры начинают готовить продукты за день до отправки заказа
             клиентам. Именно поэтому мы принимаем заказы заранее и доставляем продукты максимально свежими.
           </AboutText>
         </div>
         <div className='about__img'></div>
-      </Wrapper>
+      </GridWrapper>
     </SectionAbout>
   );
 };
