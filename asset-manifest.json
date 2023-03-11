@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/farmerShop--react/static/css/main.3212e736.css",
-    "main.js": "/farmerShop--react/static/js/main.0cd3b0f3.js",
+    "main.css": "/farmerShop--react/static/css/main.3493934e.css",
+    "main.js": "/farmerShop--react/static/js/main.50224ac8.js",
     "static/media/farmer.svg": "/farmerShop--react/static/media/farmer.4f2a5cafb26b3276c0057c5b8712d429.svg",
     "index.html": "/farmerShop--react/index.html",
-    "main.3212e736.css.map": "/farmerShop--react/static/css/main.3212e736.css.map",
-    "main.0cd3b0f3.js.map": "/farmerShop--react/static/js/main.0cd3b0f3.js.map"
+    "main.3493934e.css.map": "/farmerShop--react/static/css/main.3493934e.css.map",
+    "main.50224ac8.js.map": "/farmerShop--react/static/js/main.50224ac8.js.map"
   },
   "entrypoints": [
-    "static/css/main.3212e736.css",
-    "static/js/main.0cd3b0f3.js"
+    "static/css/main.3493934e.css",
+    "static/js/main.50224ac8.js"
   ]
 }
