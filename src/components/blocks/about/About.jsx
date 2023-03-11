@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Title, { TitleSize } from '../../components/ui/title/Title';
+import Title, { TitleSize } from '../../ui/title/Title';
 
 import './style.css';
 const AboutText = styled.p`
@@ -8,6 +8,7 @@ const AboutText = styled.p`
 `;
 
 const SectionAbout = styled.section`
+  margin-bottom: 50px;
   max-width: 1280px;
   width: 100%;
   min-height: 600px;

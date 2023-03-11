@@ -1,8 +1,14 @@
 import React from 'react';
-import About from '/src/blocks/about/About';
+import Advantages from '../../blocks/advantages/Advantages';
+import About from '/src/components/blocks/about/About';
 
-const MainPage = () => {
-  return <About />;
+const MainPage = ({ advList }) => {
+  return (
+    <>
+      <About />
+      <Advantages advList={advList} />
+    </>
+  );
 };
 
 export default MainPage;

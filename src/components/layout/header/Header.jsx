@@ -4,6 +4,7 @@ import Logo from '/src/components/ui/logo/Logo';
 
 import styled from 'styled-components';
 import Wrapper from '/src/components/layout/wrapper/Wrapper';
+import Nav from '../nav/Nav';
 
 const StyledHeader = styled.header`
   display: flex;
@@ -21,7 +22,9 @@ const Header = () => {
     <StyledHeader>
       <Wrapper>
         <Logo />
-        <Button>Купить</Button>
+        <Nav>
+          <Button>Купить</Button>
+        </Nav>
       </Wrapper>
     </StyledHeader>
   );

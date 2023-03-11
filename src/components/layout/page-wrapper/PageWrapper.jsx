@@ -12,12 +12,12 @@ const StyledMain = styled.main`
   margin: 0 auto;
 `;
 
-const PageWrapper = () => {
+const PageWrapper = ({ ...prop }) => {
   return (
     <>
       <Header />
       <StyledMain>
-        <MainPage />
+        <MainPage {...prop} />
       </StyledMain>
       <Footer />
     </>

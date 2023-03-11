@@ -1,6 +1,7 @@
-const advantagesAndDisadvantagesList = [
+const advantagesList = [
   {
     id: 0,
+    icon: '../assets/icon/eat.png',
     feature: 'farm',
     title: 'Еда намного вкуснее',
     description:
@@ -8,12 +9,14 @@ const advantagesAndDisadvantagesList = [
   },
   {
     id: 2,
+    icon: 'assets/icon/sprout.png',
     feature: 'farm',
     title: 'Натуральные продукты',
     description: 'Поставляем местные органические продукты выращенные без пестицидов и химических удобрений.',
   },
   {
     id: 3,
+    icon: 'assets/icon/garbage.png',
     feature: 'shop',
     title: 'Просроченные продукты',
     description:
@@ -21,10 +24,11 @@ const advantagesAndDisadvantagesList = [
   },
   {
     id: 4,
+    icon: 'assets/icon/no-meat.png',
     feature: 'shop',
     title: 'Некачественное мясо',
     description: 'Мясные полуфабрикаты, в которых содержится чрезмерно много натрия, вредных жиров, консервантов',
   },
 ];
 
-export default advantagesAndDisadvantagesList;
+export default advantagesList;

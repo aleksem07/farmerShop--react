@@ -17,9 +17,9 @@ const StyledButton = styled.button`
   color: #fff;
 `;
 
-const Button = ({ className, children }) => {
+const Button = ({ className, children, minWidth }) => {
   return (
-    <StyledButton className={className} type='button'>
+    <StyledButton className={className} type='button' style={{ minWidth: minWidth }}>
       {children}
     </StyledButton>
   );

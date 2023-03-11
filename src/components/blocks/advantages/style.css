@@ -1,0 +1,14 @@
+.advantages__list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	/* gap: 20px; */
+	justify-content: space-between;
+	list-style: none;
+}
+
+.advantages__item {
+	padding-block: 20px;
+	background-color: lightcyan;
+}
