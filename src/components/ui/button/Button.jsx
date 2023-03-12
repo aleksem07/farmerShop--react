@@ -5,7 +5,9 @@ import styled from 'styled-components';
 const StyledButton = styled.button`
   border: none;
   border-radius: 10px;
-  width: 20%;
+  min-width: 260px;
+  max-width: 700px;
+  width: 260px;
   min-height: 60px;
   cursor: pointer;
   background-color: #fc9b27;
@@ -17,9 +19,9 @@ const StyledButton = styled.button`
   color: #fff;
 `;
 
-const Button = ({ className, children }) => {
+const Button = ({ className, children, minWidth }) => {
   return (
-    <StyledButton className={className} type='button'>
+    <StyledButton className={className} type='button' style={{ minWidth: minWidth }}>
       {children}
     </StyledButton>
   );

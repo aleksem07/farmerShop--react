@@ -1,28 +1,33 @@
 import React from 'react';
-import Button from '/src/components/ui/button/Button';
 import Logo from '/src/components/ui/logo/Logo';
+import Nav from '../nav/Nav';
 
 import styled from 'styled-components';
-import Wrapper from '/src/components/layout/wrapper/Wrapper';
 
 const StyledHeader = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  margin: 0 auto;
+  padding: 0 90px;
   max-width: 1280px;
   width: 100%;
   min-height: 80px;
-  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 0 1px rgba(0, 0, 0, 0.04);
+
+  z-index: 5;
+  box-sizing: border-box;
 `;
 
 const Header = () => {
   return (
     <StyledHeader>
-      <Wrapper>
-        <Logo />
-        <Button>Купить</Button>
-      </Wrapper>
+      <Logo />
+      <Nav />
     </StyledHeader>
   );
 };
