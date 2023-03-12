@@ -2,14 +2,18 @@ import React from 'react';
 import Title, { TitleSize } from '../title/Title';
 import './style.css';
 
-const AdvantageCard = ({ icon, feature, title, description }) => {
+const AdvantageCard = ({ icon, owner, title, description, isNegative }) => {
   return (
-    <article className='advantage-card'>
-      <img src={icon} alt='' width={56} height={56} />
-      <span>{feature}</span>
-      <Title size={TitleSize.SMALL}>{title}</Title>
-      <p className='advantage-card__text'>{description}</p>
-    </article>
+    <section className={`advantage${isNegative ? ' advantage_negative' : ''}`}>
+      <header className='advantage__header'>
+        <img className='advantage__img' src={icon} alt={title} width={56} height={56} />
+        <div>
+          <span className={`advantage__owner${isNegative ? ' advantage__owner_negative' : ''}`}>{owner}</span>
+          <Title size={TitleSize.EXTRA_SMALL}>{title}</Title>
+        </div>
+      </header>
+      <p className='advantage__text' dangerouslySetInnerHTML={{ __html: description }}></p>
+    </section>
   );
 };
 

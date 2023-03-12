@@ -5,7 +5,9 @@ import styled from 'styled-components';
 const StyledButton = styled.button`
   border: none;
   border-radius: 10px;
-  width: 20%;
+  min-width: 260px;
+  max-width: 700px;
+  width: 260px;
   min-height: 60px;
   cursor: pointer;
   background-color: #fc9b27;

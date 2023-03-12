@@ -1,14 +1,21 @@
 .advantages__list {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
-	/* gap: 20px; */
-	justify-content: space-between;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 44px;
+  margin-bottom: 64px;
+  margin-left: -20px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
 }
 
 .advantages__item {
-	padding-block: 20px;
-	background-color: lightcyan;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 27px;
+  vertical-align: top;
+  text-align: left;
+  overflow: hidden;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '/src/components/ui/logo/Logo';
 
 import styled from 'styled-components';
-import Wrapper from '/src/components/layout//wrapper/Wrapper';
+
 
 const StyledFooter = styled.footer`
   display: flex;
@@ -28,10 +28,8 @@ const Copyright = styled.span`
 const Footer = () => {
   return (
     <StyledFooter>
-      <Wrapper>
-        <Logo />
-        <Copyright>Создано в 2021</Copyright>
-      </Wrapper>
+      <Logo />
+      <Copyright>Создано в 2021</Copyright>
     </StyledFooter>
   );
 };

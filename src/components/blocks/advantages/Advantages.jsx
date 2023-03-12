@@ -11,10 +11,16 @@ const SectionAdvantages = styled.section`
   padding-top: 50px;
   max-width: 1280px;
   width: 100%;
-`;
 
-const Wrapper = styled.div`
-  margin-inline: 7%;
+  position: relative;
+  display: flex;
+  padding-left: 90px;
+  padding-right: 90px;
+  box-sizing: border-box;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const ButtonAdvantages = styled(Button)`
@@ -23,25 +29,19 @@ const ButtonAdvantages = styled(Button)`
 `;
 
 const Advantages = ({ advList }) => {
-  return (
+  return advList && advList.length ? (
     <SectionAdvantages>
-      <Wrapper>
-        {advList?.length ? (
-          <>
-            <Title size={TitleSize.SMALL}>Почему фермерские продукты лучше?</Title>
-            <ul className='advantages__list'>
-              {advList.map(advItem => (
-                <li className='advantages__item' key={advItem.id}>
-                  <AdvantageCard {...advItem} />
-                </li>
-              ))}
-            </ul>
-            <ButtonAdvantages>Купить</ButtonAdvantages>
-          </>
-        ) : null}
-      </Wrapper>
+      <Title size={TitleSize.SMALL}>Почему фермерские продукты лучше?</Title>
+      <ul className='advantages__list'>
+        {advList.map(advItem => (
+          <li className='advantages__item' key={advItem.id}>
+            <AdvantageCard {...advItem} />
+          </li>
+        ))}
+      </ul>
+      <ButtonAdvantages>Купить</ButtonAdvantages>
     </SectionAdvantages>
-  );
+  ) : null;
 };
 
 export default Advantages;
